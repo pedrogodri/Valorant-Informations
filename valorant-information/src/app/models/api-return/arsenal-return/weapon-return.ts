@@ -1,4 +1,5 @@
-import { Weapon } from './../../api-model/arsenal-model/weapon-model';
+import { Weapon } from "../../api-model/arsenal-model/weapon-model";
+
 export class WeaponReturn {
   status?: number;
   data: Weapon[] = [];

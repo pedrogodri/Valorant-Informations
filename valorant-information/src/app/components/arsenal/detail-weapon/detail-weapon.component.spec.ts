@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListArsenalComponent } from './list-arsenal.component';
+import { DetailWeaponComponent } from './detail-weapon.component';
 
-describe('ListArsenalComponent', () => {
-  let component: ListArsenalComponent;
-  let fixture: ComponentFixture<ListArsenalComponent>;
+describe('DetailWeaponComponent', () => {
+  let component: DetailWeaponComponent;
+  let fixture: ComponentFixture<DetailWeaponComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListArsenalComponent ]
+      declarations: [ DetailWeaponComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListArsenalComponent);
+    fixture = TestBed.createComponent(DetailWeaponComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-3 mb-2">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" id="{{ weapon.displayName }}" src="{{ weapon.displayIcon }}"
+        alt="{{ weapon.displayName }} Image">
+      <div class="card-body">
+        <h5 class="card-title"> {{ weapon.displayName }} </h5>
+        <a routerLink="/detailWeapon/{{ weapon.uuid }}" class="btn btn-primary">Ir {{weapon.displayName}}</a>
+      </div>
+    </div>
+  </div>
+</div>

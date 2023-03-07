@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WeaponComponent } from './components/arsenal/weapon/weapon.component';
+import { AgentsComponent } from './components/agents/agents.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -11,6 +12,8 @@ const routes: Routes = [
   {path: 'arsenal', component: ArsenalComponent},
   {path: 'weapon', component: WeaponComponent},
   {path: 'detailWeapon/:uuid', component: DetailWeaponComponent},
+  {path: 'agents', component: AgentsComponent},
+  {path: 'agents/:uuid', component: AgentsComponent},
 ];
 
 @NgModule({

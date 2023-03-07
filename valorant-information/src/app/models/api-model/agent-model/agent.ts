@@ -1,5 +1,5 @@
 export class Agent {
-  uuid: string = '';
+  uuid?: string;
   displayName?: string;
   description?: string;
   developerName?: string

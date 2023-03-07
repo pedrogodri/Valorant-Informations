@@ -12,7 +12,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AgentsComponent implements OnInit {
 
-  public agentData$ = new Subject<Agent[] | undefined>();
+  public agentData$ = new Subject<Agent[] | any>();
   public singleAgent: SingleAgentReturn = new SingleAgentReturn({});
 
   constructor(public service: ApiService,

@@ -10,6 +10,7 @@ import { WeaponComponent } from './components/arsenal/weapon/weapon.component';
 import { DetailWeaponComponent } from './components/arsenal/detail-weapon/detail-weapon.component';
 import { AgentsComponent } from './components/agents/agents.component';
 import { AgentComponent } from './components/agents/agent/agent.component';
+import { BundlesComponent } from './components/bundles/bundles.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AgentComponent } from './components/agents/agent/agent.component';
     DetailWeaponComponent,
     AgentsComponent,
     AgentComponent,
+    BundlesComponent,
   ],
   imports: [
     BrowserModule,

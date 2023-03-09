@@ -1,3 +1,4 @@
+import { BundlesReturn } from './../models/api-return/bundles-return/bundles-return';
 import { AgentsReturn } from './../models/api-return/agent-return/agent-return';
 
 import { Injectable } from '@angular/core';
@@ -17,6 +18,8 @@ export class ApiService {
 
   private URL_API_AGENTS = `${this.URL_API}/agents/?isPlayableCharacter=true&language=pt-BR`;
 
+  private URL_API_BUNDLES = `${this.URL_API}/bundles`;
+
   constructor(public http: HttpClient) { }
 
   getWeapons() {
@@ -33,5 +36,9 @@ export class ApiService {
 
   getAgentByUuid(Uuid: string) {
     return this.http.get<SingleWeaponReturn>(`${this.URL_API}/agents/${Uuid}?language=pt-BR`);
+  }
+
+  getBundles() {
+    return this.http.get<BundlesReturn>(this.URL_API_BUNDLES);
   }
 }

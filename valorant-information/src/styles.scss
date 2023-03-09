@@ -1,0 +1,26 @@
+@import "styles-main.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  background-color: aqua;
+}
+
+.valorant-font {
+  font-family: "Valorant";
+}

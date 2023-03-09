@@ -1,3 +1,4 @@
+import { ContentTiersComponent } from './components/content-tiers/content-tiers.component';
 import { BundlesComponent } from './components/bundles/bundles.component';
 import { DetailWeaponComponent } from './components/arsenal/detail-weapon/detail-weapon.component';
 import { ArsenalComponent } from './components/arsenal/arsenal/arsenal.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'agents', component: AgentsComponent},
   {path: 'agents/:uuid', component: AgentsComponent},
   {path: 'bundles', component: BundlesComponent},
+  {path: 'contentTiers', component: ContentTiersComponent},
 ];
 
 @NgModule({

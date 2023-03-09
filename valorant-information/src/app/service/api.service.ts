@@ -1,3 +1,4 @@
+import { ContentTiersReturn } from './../models/api-return/content-tiers-return/content-tiers-return';
 import { BundlesReturn } from './../models/api-return/bundles-return/bundles-return';
 import { AgentsReturn } from './../models/api-return/agent-return/agent-return';
 
@@ -15,10 +16,9 @@ export class ApiService {
 
   private URL_API_WEAPONS = `${this.URL_API}/weapons`;
   private URL_API_WEAPONS_PT_BR = `${this.URL_API_WEAPONS}?language=pt-BR`
-
   private URL_API_AGENTS = `${this.URL_API}/agents/?isPlayableCharacter=true&language=pt-BR`;
-
   private URL_API_BUNDLES = `${this.URL_API}/bundles`;
+  private URL_API_CONTENT_TIERS = `${this.URL_API}/contenttiers`;
 
   constructor(public http: HttpClient) { }
 
@@ -40,5 +40,9 @@ export class ApiService {
 
   getBundles() {
     return this.http.get<BundlesReturn>(this.URL_API_BUNDLES);
+  }
+
+  getContentTiers() {
+    return this.http.get<ContentTiersReturn>(this.URL_API_CONTENT_TIERS);
   }
 }

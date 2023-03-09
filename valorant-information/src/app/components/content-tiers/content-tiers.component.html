@@ -1,0 +1,12 @@
+<div class="row">
+  <div *ngFor="let bundles of contentTiers$ | async;" class="col-3 mb-2">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" id="{{ bundles.displayName }}" src="{{ bundles.displayIcon }}"
+        alt="{{ bundles.displayName }} Image">
+      <div class="card-body">
+        <h5 class="card-title"> {{ bundles.displayName }} </h5>
+        <p>Raridade: {{ bundles.rank }} </p>
+      </div>
+    </div>
+  </div>
+</div>

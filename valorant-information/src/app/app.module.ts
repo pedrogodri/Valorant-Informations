@@ -11,6 +11,7 @@ import { DetailWeaponComponent } from './components/arsenal/detail-weapon/detail
 import { AgentsComponent } from './components/agents/agents.component';
 import { AgentComponent } from './components/agents/agent/agent.component';
 import { BundlesComponent } from './components/bundles/bundles.component';
+import { ContentTiersComponent } from './components/content-tiers/content-tiers.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BundlesComponent } from './components/bundles/bundles.component';
     AgentsComponent,
     AgentComponent,
     BundlesComponent,
+    ContentTiersComponent,
   ],
   imports: [
     BrowserModule,
